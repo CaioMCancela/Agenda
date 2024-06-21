@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/Icone.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/CSS" href="estilos/estilo2.css">
+    <script src="scripts/script2.js"></script>
+    <title>Agenda Online</title>
+</head>
+<body>
+    <header>Cadastro de Contato</header>
+    <div class="container"> 
+        <div class="campos">
+            <div>
+            <label id="campos1" for="nome">Nome</label>
+            <input id="nome" type="text" readonly autocomplete="off">
+            </div>
+            <div>
+            <label id="campos2" for="sobrenome">Sobrenome</label>
+            <input id="sobrenome" type="text" readonly autocomplete="off">
+            </div>
+            <label for="endereco">Endereço</label>
+            <input id="endereco" type="text" readonly autocomplete="off">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="number" readonly autocomplete="off">
+        </div>
+        <div class="botoes">
+            <button onclick="incluir()" id="incluir">INCLUIR</button>
+            <button onclick="editar()" class="desativar" id="editar" disabled>EDITAR</button>
+            <button onclick="salvar()" class="desativar" id="salvar" disabled>SALVAR</button>
+            <button onclick="cancelar()" class="desativar" id="cancelar" disabled >CANCELAR</button>
+            <button onclick="excluir()" class="desativar" id="excluir" disabled>EXCLUIR</button>
+        </div>
+        <div class="botoes2">
+            <button onclick="primeiroitem()">|<</button>
+            <button onclick="anterior()"><</button>
+            <button onclick="proximo()">></button>
+            <button onclick="ultimoitem()">>|</button>
+        </div>
+    </div>
+   <footer>AGENDA DE CONTATOS</footer>
+    
+</body>
+</html>
